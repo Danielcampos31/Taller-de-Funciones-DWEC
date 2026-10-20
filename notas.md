@@ -113,3 +113,18 @@ Cambié el signo de multiplicar por el de sumar en la función `calcularIVA`. La
 **2. ¿Por qué no sirve una prueba que siempre pasa?**
 
 Porque no comprueba si la función funciona de verdad. Una prueba tiene que detectar los errores cuando el resultado no es el correcto.
+
+## Fase 6: Documentación y revisión final
+
+### ¿Qué error te encontraste y cómo lo arreglaste?
+
+Tuve un problema con el botón de ejecutar pruebas, porque al principio no mostraba los resultados. Lo revisé y comprobé que el archivo de pruebas se cargaba correctamente. Después conseguí que funcionara y pude comprobar los resultados desde la página.
+
+Para revisar el código también he usado la consola del navegador, que me permite ver si hay errores. Por último, he añadido comentarios JSDoc encima de las funciones para explicar qué hacen, qué datos reciben y qué devuelven.
+
+### Revisión final
+
+- He documentado las funciones de `funciones.js`.
+- He comprobado que las pruebas funcionan.
+- He revisado la consola del navegador.
+- He comprobado que las cinco herramientas funcionan en la página.
