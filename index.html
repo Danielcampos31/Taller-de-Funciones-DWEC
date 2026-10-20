@@ -5,11 +5,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de funciones</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js" defer></script>
+    <script src="app.js" defer></script>
 </head>
 <body>
-    <h1>Taller de funciones</h1>
-    <p>Proyecto de prácticas de JavaScript.</p>
+    <header>
+        <h1>Taller de funciones</h1>
+        <p>Proyecto de prácticas de JavaScript - 2º DAW</p>
+    </header>
 
-    <script src="funciones.js"></script>
+    <main>
+        <section>
+            <h2>1. IVA y descuentos</h2>
+
+            <label for="precio">Precio (€):</label>
+            <input type="number" id="precio" step="any" placeholder="Introduce el precio">
+
+            <label for="iva">IVA (%):</label>
+            <input type="number" id="iva" step="any" placeholder="Por defecto 21">
+
+            <button id="btnIVA">Calcular precio con IVA</button>
+
+            <label for="descuento">Descuento (%):</label>
+            <input type="number" id="descuento" step="any" placeholder="Por defecto 0">
+
+            <button id="btnDescuento">Aplicar descuento</button>
+            <p id="resultadoPrecios" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>2. Conversor de temperaturas</h2>
+
+            <label for="temperatura">Temperatura:</label>
+            <input type="number" id="temperatura" step="any" placeholder="Introduce la temperatura">
+
+            <label for="unidadOrigen">De:</label>
+            <select id="unidadOrigen">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+            </select>
+
+            <label for="unidadDestino">A:</label>
+            <select id="unidadDestino">
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="C">Celsius (°C)</option>
+            </select>
+
+            <button id="btnTemperatura">Convertir temperatura</button>
+            <p id="resultadoTemperatura" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>3. Validador de contraseñas</h2>
+
+            <label for="contrasena">Contraseña:</label>
+            <input type="text" id="contrasena" placeholder="Escribe una contraseña">
+
+            <button id="btnValidar">Validar contraseña</button>
+            <p id="resultadoValidacion" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>4. Generador de contraseñas</h2>
+
+            <label for="longitud">Longitud (6-30):</label>
+            <input type="number" id="longitud" min="6" max="30" step="1" value="12">
+
+            <label>
+                <input type="checkbox" id="mayusculas" checked>
+                Incluir mayúsculas
+            </label>
+
+            <label>
+                <input type="checkbox" id="numeros" checked>
+                Incluir números
+            </label>
+
+            <button id="btnGenerar">Generar contraseña</button>
+            <p id="resultadoGenerador" aria-live="polite"></p>
+        </section>
+
+        <section>
+            <h2>5. Contador de palabras</h2>
+
+            <label for="texto">Escribe un texto:</label>
+            <textarea id="texto" rows="5" placeholder="Escribe o pega un texto"></textarea>
+
+            <button id="btnContar">Contar palabras y caracteres</button>
+            <p id="resultadoContador" aria-live="polite"></p>
+        </section>
+    </main>
+
 </body>
 </html>

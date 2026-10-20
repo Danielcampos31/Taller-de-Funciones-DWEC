@@ -1,0 +1,77 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f3f6;
+    color: #222;
+}
+
+header {
+    background-color: #263b60;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #00000015;
+}
+
+h2 {
+    color: #263b60;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+button {
+    margin-top: 12px;
+    padding: 10px 15px;
+    background-color: #315b9a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #203e6c;
+}
+
+p[id^="resultado"] {
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+}
+
