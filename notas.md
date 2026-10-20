@@ -43,3 +43,39 @@ JavaScript utiliza números de coma flotante y algunos decimales no se pueden re
 - `String(25)`: convierte el número 25 en el texto `"25"`.
 - `Math.floor(3.8)`: redondea hacia abajo y devuelve 3.
 - `"hola".toUpperCase()`: convierte el texto a mayúsculas y devuelve `"HOLA"`.
+
+## Fase 2. Funciones de precios y descuentos
+
+### Funciones creadas
+
+- `calcularIVA(precio, porcentajeIVA)`: calcula la cantidad correspondiente al IVA. Si no se indica el porcentaje, utiliza el 21 %.
+- `precioConIVA(precio, porcentajeIVA)`: suma el IVA al precio original.
+- `aplicarDescuento(precio, porcentajeDescuento)`: calcula el precio después de aplicar un descuento.
+- `redondear(numero, decimales)`: redondea un número al número de decimales indicado.
+- `formatearEuros(precio)`: muestra una cantidad con el formato de euros de España.
+
+### Pruebas realizadas
+
+| Prueba | Resultado |
+|---|---|
+| `calcularIVA(100)` | 21 |
+| `precioConIVA(100)` | 121 |
+| `aplicarDescuento(100, 20)` | 80 |
+| `redondear(1.005)` | 1.01 |
+| `formatearEuros(1234.5)` | 1.234,50 € |
+
+Todas las pruebas han dado el resultado esperado.
+
+### Preguntas
+
+**1. ¿Qué diferencia hay entre una función que devuelve un valor con `return` y otra que solo usa `console.log()`?**
+
+`return` devuelve un resultado que se puede guardar en una variable o utilizar en otro cálculo. `console.log()` solo muestra información en la consola y no devuelve ese resultado como valor de la función.
+
+**2. ¿Qué ventaja tiene utilizar una función para calcular el IVA?**
+
+Permite reutilizar el mismo cálculo en diferentes partes del programa, evita repetir código y facilita modificarlo si fuera necesario.
+
+**3. ¿Qué diferencia hay entre una función normal y una función flecha?**
+
+Una función normal se declara con `function`, mientras que una función flecha utiliza `=>`. Ambas pueden realizar cálculos y devolver resultados. Para esta práctica, las dos pueden servir para aplicar un descuento.
