@@ -79,3 +79,15 @@ Permite reutilizar el mismo cálculo en diferentes partes del programa, evita re
 **3. ¿Qué diferencia hay entre una función normal y una función flecha?**
 
 Una función normal se declara con `function`, mientras que una función flecha utiliza `=>`. Ambas pueden realizar cálculos y devolver resultados. Para esta práctica, las dos pueden servir para aplicar un descuento.
+
+## Fase 3: Temperaturas, contraseñas y contador de palabras
+
+### Preguntas
+
+**1. ¿Qué funciones usa `evaluarContrasena()`? ¿Y `generarContrasena()`?**
+
+`evaluarContrasena()` utiliza las funciones que comprueban la longitud, las mayúsculas, las minúsculas y los números. `generarContrasena()` utiliza las funciones que generan números y caracteres aleatorios.
+
+**2. ¿Cuál fue la función más difícil? ¿Por qué?**
+
+La que más me ha costado ha sido `generarContrasena()`, porque tiene que crear una contraseña con la longitud indicada y permitir elegir qué caracteres se utilizan.
