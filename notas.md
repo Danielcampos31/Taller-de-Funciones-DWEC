@@ -91,3 +91,25 @@ Una función normal se declara con `function`, mientras que una función flecha 
 **2. ¿Cuál fue la función más difícil? ¿Por qué?**
 
 La que más me ha costado ha sido `generarContrasena()`, porque tiene que crear una contraseña con la longitud indicada y permitir elegir qué caracteres se utilizan.
+
+## Fase 04. Conecta las herramientas con la página
+
+**1. ¿Por qué el precio vacío no puede tratarse como 0?**
+
+Porque si dejamos el precio vacío, no sabemos cuánto cuesta el producto. Si lo tratamos como 0, el programa haría el cálculo sin avisar de que falta un dato.
+
+**2. Apunta tres funciones predefinidas que has usado en esta fase y para qué.**
+
+- `Number()`: para convertir el texto de los campos en números.
+- `Number.isFinite()`: para comprobar que el valor es un número válido.
+- `Math.round()`: para redondear los resultados de algunos cálculos.
+
+### Fase 5: Pruebas
+
+**1. ¿Qué fallo introdujiste y qué prueba lo detectó?**
+
+Cambié el signo de multiplicar por el de sumar en la función `calcularIVA`. Las pruebas del IVA detectaron que el resultado no era el esperado. Después lo corregí y volví a ejecutar las pruebas.
+
+**2. ¿Por qué no sirve una prueba que siempre pasa?**
+
+Porque no comprueba si la función funciona de verdad. Una prueba tiene que detectar los errores cuando el resultado no es el correcto.

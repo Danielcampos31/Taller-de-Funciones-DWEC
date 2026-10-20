@@ -154,3 +154,4 @@ document.getElementById("btnTemperatura").addEventListener("click", manejarTempe
 document.getElementById("btnValidar").addEventListener("click", manejarValidacion);
 document.getElementById("btnGenerar").addEventListener("click", manejarGenerador);
 document.getElementById("btnContar").addEventListener("click", manejarContador);
+document.getElementById("btnPruebas").addEventListener("click", ejecutarPruebas);
